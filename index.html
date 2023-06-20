@@ -52,6 +52,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#seccion-contacto">Contacto</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tickets">Comprar tickets</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -198,6 +201,59 @@
     </form>
 </div>
 </section>
+<!--==============COMPRA TICKETS ========================-->
+<div id="tickets" class="tickets">
+    <div class="container-tickets">
+        <div class="tickets-category">
+            <div class="estudiante">
+                <h3>Estudiante</h3>
+                <h5>Tiene un descuento</h5>
+                <h2>80%</h2>
+                <h6>* presentar documentación</h6>
+            </div>
+            <div class="trainee">
+                <h3>Trainee</h3>
+                <h5>Tiene un descuento</h5>
+                <h2>50%</h2>
+                <h6>* presentar documentación</h6>
+            </div>
+            <div class="junior">
+                <h3>Junior</h3>
+                <h5>Tiene un descuento</h5>
+                <h2>15%</h2>
+                <h6>* presentar documentación</h6>
+            </div>
+        </div>
+        <div class="tickets-text">
+            <h6>VENTA</h6>
+            <h1>VALOR DE TICKET $200</h1>
+        </div>
+        <form class="ticketsForm" action="">
+            <div class="tickets-form">
+                <input type="text" class="ticketsFirstName" name="Nombre" placeholder="Nombre">
+                <input type="text" class="ticketsLastName" name="Apellido" placeholder="Apellido">
+                <input type="email" class="ticketsEmail" name="Email" placeholder="E-mail">
+                <div class="labelTicketsQuantity">
+                    <label for="Cantidad">Cantidad</label>
+                    <input id="ticketsQuantity" type="text" class="ticketsQuantity" name="Cantidad"
+                        placeholder="Cantidad">
+                </div>
+                <div class="labelTicketsCategory">
+                    <label for="Categoria">Categoria</label>
+                    <select name="Categoria" class="ticketsCategory">
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Trainee">Trainee</option>
+                        <option value="Junior">Junior</option>
+                    </select>
+                </div>
+                <output class="ticketsOutput"><span class="ticketsValue">Total a pagar: </span></output>
+                <button id="ticketsBorrar" type="reset" class="btnTickets" name="Borrar">Borrar</button>
+                <button id="ticketsResumen" class="btnTickets" name="Resumen">Resumen</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <!--=======<!--FOOTER ================ -->
 <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap">
     <p class="fs-5 px-3  pt-3">PodologiaPiesFelices &copy; Todos Los Derechos Reservados 2023</p>
@@ -208,7 +264,6 @@
         <a href="https://wa.me/+5491173648503?text=Estoy%20interesado%20en%20tener%20una%20cita"><i class="bi bi-whatsapp"></i></a>
     </div>
   </footer>
-
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
